@@ -9,23 +9,55 @@
 /* Begin PBXBuildFile section */
 		B5F15879245D70FA003FE428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15878245D70FA003FE428 /* AppDelegate.swift */; };
 		B5F1587B245D70FA003FE428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1587A245D70FA003FE428 /* SceneDelegate.swift */; };
-		B5F1587E245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F1587C245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld */; };
 		B5F15880245D70FA003FE428 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1587F245D70FA003FE428 /* ContentView.swift */; };
 		B5F15882245D70FB003FE428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F15881245D70FB003FE428 /* Assets.xcassets */; };
 		B5F15885245D70FB003FE428 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F15884245D70FB003FE428 /* Preview Assets.xcassets */; };
 		B5F15888245D70FB003FE428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F15886245D70FB003FE428 /* LaunchScreen.storyboard */; };
+		B5F158AD245DB7C8003FE428 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15891245DB7C8003FE428 /* MD5.swift */; };
+		B5F158AE245DB7C8003FE428 /* SerializationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15893245DB7C8003FE428 /* SerializationManager.swift */; };
+		B5F158AF245DB7C8003FE428 /* DataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15895245DB7C8003FE428 /* DataWrapper.swift */; };
+		B5F158B0245DB7C8003FE428 /* ErrorAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15896245DB7C8003FE428 /* ErrorAlertView.swift */; };
+		B5F158B1245DB7C8003FE428 /* URLSesstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15898245DB7C8003FE428 /* URLSesstion.swift */; };
+		B5F158B2245DB7C8003FE428 /* FacadeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1589A245DB7C8003FE428 /* FacadeAPI.swift */; };
+		B5F158B3245DB7C8003FE428 /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1589C245DB7C8003FE428 /* CoreDataAPI.swift */; };
+		B5F158B4245DB7C8003FE428 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1589E245DB7C8003FE428 /* String + Extensions.swift */; };
+		B5F158B5245DB7C8003FE428 /* Data + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1589F245DB7C8003FE428 /* Data + Extensions.swift */; };
+		B5F158B7245DB7C8003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5F158A2245DB7C8003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld */; };
+		B5F158B9245DB7C8003FE428 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B5F158A5245DB7C8003FE428 /* data.json */; };
+		B5F158BA245DB7C8003FE428 /* loginModelCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F158A6245DB7C8003FE428 /* loginModelCodable.swift */; };
+		B5F158BF245DB7C8003FE428 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F158AC245DB7C8003FE428 /* Constants.swift */; };
+		B5F158C8245DB948003FE428 /* LoginModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F158C4245DB947003FE428 /* LoginModel+CoreDataClass.swift */; };
+		B5F158C9245DB948003FE428 /* LoginModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F158C5245DB947003FE428 /* LoginModel+CoreDataProperties.swift */; };
+		B5F158CA245DB948003FE428 /* Role+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F158C6245DB947003FE428 /* Role+CoreDataClass.swift */; };
+		B5F158CB245DB948003FE428 /* Role+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F158C7245DB947003FE428 /* Role+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5F15875245D70FA003FE428 /* MD5 algorithm SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MD5 algorithm SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F15878245D70FA003FE428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5F1587A245D70FA003FE428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5F1587D245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MD5_algorithm_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		B5F1587F245D70FA003FE428 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5F15881245D70FB003FE428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F15884245D70FB003FE428 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5F15887245D70FB003FE428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5F15889245D70FB003FE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F15891245DB7C8003FE428 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		B5F15893245DB7C8003FE428 /* SerializationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationManager.swift; sourceTree = "<group>"; };
+		B5F15895245DB7C8003FE428 /* DataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataWrapper.swift; sourceTree = "<group>"; };
+		B5F15896245DB7C8003FE428 /* ErrorAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAlertView.swift; sourceTree = "<group>"; };
+		B5F15898245DB7C8003FE428 /* URLSesstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSesstion.swift; sourceTree = "<group>"; };
+		B5F1589A245DB7C8003FE428 /* FacadeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeAPI.swift; sourceTree = "<group>"; };
+		B5F1589C245DB7C8003FE428 /* CoreDataAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataAPI.swift; sourceTree = "<group>"; };
+		B5F1589E245DB7C8003FE428 /* String + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
+		B5F1589F245DB7C8003FE428 /* Data + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data + Extensions.swift"; sourceTree = "<group>"; };
+		B5F158A3245DB7C8003FE428 /* MD5_algoritm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MD5_algoritm.xcdatamodel; sourceTree = "<group>"; };
+		B5F158A5245DB7C8003FE428 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B5F158A6245DB7C8003FE428 /* loginModelCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginModelCodable.swift; sourceTree = "<group>"; };
+		B5F158AC245DB7C8003FE428 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5F158C4245DB947003FE428 /* LoginModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5F158C5245DB947003FE428 /* LoginModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5F158C6245DB947003FE428 /* Role+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Role+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5F158C7245DB947003FE428 /* Role+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Role+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +90,14 @@
 		B5F15877245D70FA003FE428 /* MD5 algorithm SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				B5F15878245D70FA003FE428 /* AppDelegate.swift */,
-				B5F1587A245D70FA003FE428 /* SceneDelegate.swift */,
+				B5F158CC245DBA09003FE428 /* Delegates */,
+				B5F1588F245DB7C7003FE428 /* Base */,
+				B5F1589D245DB7C8003FE428 /* Extensions */,
+				B5F158A0245DB7C8003FE428 /* Model */,
 				B5F1587F245D70FA003FE428 /* ContentView.swift */,
 				B5F15881245D70FB003FE428 /* Assets.xcassets */,
 				B5F15886245D70FB003FE428 /* LaunchScreen.storyboard */,
 				B5F15889245D70FB003FE428 /* Info.plist */,
-				B5F1587C245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld */,
 				B5F15883245D70FB003FE428 /* Preview Content */,
 			);
 			path = "MD5 algorithm SwiftUI";
@@ -76,6 +109,101 @@
 				B5F15884245D70FB003FE428 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5F1588F245DB7C7003FE428 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B5F158AC245DB7C8003FE428 /* Constants.swift */,
+				B5F15890245DB7C8003FE428 /* MD5 */,
+				B5F15892245DB7C8003FE428 /* SerializationManager */,
+				B5F15894245DB7C8003FE428 /* ErrorHandling */,
+				B5F15897245DB7C8003FE428 /* Networking */,
+				B5F15899245DB7C8003FE428 /* Facade */,
+				B5F1589B245DB7C8003FE428 /* CoreDataAPI */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B5F15890245DB7C8003FE428 /* MD5 */ = {
+			isa = PBXGroup;
+			children = (
+				B5F15891245DB7C8003FE428 /* MD5.swift */,
+			);
+			path = MD5;
+			sourceTree = "<group>";
+		};
+		B5F15892245DB7C8003FE428 /* SerializationManager */ = {
+			isa = PBXGroup;
+			children = (
+				B5F15893245DB7C8003FE428 /* SerializationManager.swift */,
+			);
+			path = SerializationManager;
+			sourceTree = "<group>";
+		};
+		B5F15894245DB7C8003FE428 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				B5F15895245DB7C8003FE428 /* DataWrapper.swift */,
+				B5F15896245DB7C8003FE428 /* ErrorAlertView.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		B5F15897245DB7C8003FE428 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B5F15898245DB7C8003FE428 /* URLSesstion.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B5F15899245DB7C8003FE428 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1589A245DB7C8003FE428 /* FacadeAPI.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		B5F1589B245DB7C8003FE428 /* CoreDataAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1589C245DB7C8003FE428 /* CoreDataAPI.swift */,
+			);
+			path = CoreDataAPI;
+			sourceTree = "<group>";
+		};
+		B5F1589D245DB7C8003FE428 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5F1589E245DB7C8003FE428 /* String + Extensions.swift */,
+				B5F1589F245DB7C8003FE428 /* Data + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5F158A0245DB7C8003FE428 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5F158C4245DB947003FE428 /* LoginModel+CoreDataClass.swift */,
+				B5F158C5245DB947003FE428 /* LoginModel+CoreDataProperties.swift */,
+				B5F158C6245DB947003FE428 /* Role+CoreDataClass.swift */,
+				B5F158C7245DB947003FE428 /* Role+CoreDataProperties.swift */,
+				B5F158A2245DB7C8003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld */,
+				B5F158A5245DB7C8003FE428 /* data.json */,
+				B5F158A6245DB7C8003FE428 /* loginModelCodable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5F158CC245DBA09003FE428 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B5F15878245D70FA003FE428 /* AppDelegate.swift */,
+				B5F1587A245D70FA003FE428 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +267,7 @@
 				B5F15888245D70FB003FE428 /* LaunchScreen.storyboard in Resources */,
 				B5F15885245D70FB003FE428 /* Preview Assets.xcassets in Resources */,
 				B5F15882245D70FB003FE428 /* Assets.xcassets in Resources */,
+				B5F158B9245DB7C8003FE428 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,10 +278,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5F1587E245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld in Sources */,
+				B5F158BF245DB7C8003FE428 /* Constants.swift in Sources */,
+				B5F158B5245DB7C8003FE428 /* Data + Extensions.swift in Sources */,
+				B5F158AD245DB7C8003FE428 /* MD5.swift in Sources */,
+				B5F158CB245DB948003FE428 /* Role+CoreDataProperties.swift in Sources */,
+				B5F158CA245DB948003FE428 /* Role+CoreDataClass.swift in Sources */,
+				B5F158AF245DB7C8003FE428 /* DataWrapper.swift in Sources */,
 				B5F15879245D70FA003FE428 /* AppDelegate.swift in Sources */,
+				B5F158B2245DB7C8003FE428 /* FacadeAPI.swift in Sources */,
+				B5F158B0245DB7C8003FE428 /* ErrorAlertView.swift in Sources */,
+				B5F158C8245DB948003FE428 /* LoginModel+CoreDataClass.swift in Sources */,
+				B5F158B7245DB7C8003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld in Sources */,
 				B5F15880245D70FA003FE428 /* ContentView.swift in Sources */,
+				B5F158C9245DB948003FE428 /* LoginModel+CoreDataProperties.swift in Sources */,
+				B5F158B1245DB7C8003FE428 /* URLSesstion.swift in Sources */,
+				B5F158AE245DB7C8003FE428 /* SerializationManager.swift in Sources */,
 				B5F1587B245D70FA003FE428 /* SceneDelegate.swift in Sources */,
+				B5F158B4245DB7C8003FE428 /* String + Extensions.swift in Sources */,
+				B5F158B3245DB7C8003FE428 /* CoreDataAPI.swift in Sources */,
+				B5F158BA245DB7C8003FE428 /* loginModelCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,14 +434,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MD5 algorithm SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 9RU98R4UK5;
+				DEVELOPMENT_TEAM = Z29U9TK6XW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MD5 algorithm SwiftUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "mdoslic.MD5-algorithm-SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "mdoslic.MD5-algorithm-SwiftUI-version";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,14 +454,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MD5 algorithm SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 9RU98R4UK5;
+				DEVELOPMENT_TEAM = Z29U9TK6XW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MD5 algorithm SwiftUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "mdoslic.MD5-algorithm-SwiftUI";
+				PRODUCT_BUNDLE_IDENTIFIER = "mdoslic.MD5-algorithm-SwiftUI-version";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,12 +492,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B5F1587C245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld */ = {
+		B5F158A2245DB7C8003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B5F1587D245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodel */,
+				B5F158A3245DB7C8003FE428 /* MD5_algoritm.xcdatamodel */,
 			);
-			currentVersion = B5F1587D245D70FA003FE428 /* MD5_algorithm_SwiftUI.xcdatamodel */;
+			currentVersion = B5F158A3245DB7C8003FE428 /* MD5_algoritm.xcdatamodel */;
 			path = MD5_algorithm_SwiftUI.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
