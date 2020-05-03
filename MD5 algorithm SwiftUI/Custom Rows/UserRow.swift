@@ -6,9 +6,7 @@
 //  Copyright © 2020 Mateo Doslic. All rights reserved.
 //
 
-
 import SwiftUI
-import UIKit
 
 struct UserkRow: View {
   var loginModel: LoginModel
@@ -17,7 +15,8 @@ struct UserkRow: View {
       Spacer()
       AsyncImage(
         url: URL(string: loginModel.avatarUrl!)!,
-        placeholder: Text("Loading ...")
+        placeholder: ActivityIndicator(isAnimating: .constant(true), style: .medium)
+        
       ).aspectRatio(contentMode: .fit)
         .frame(width: 100, height: 100)
       Spacer()

@@ -18,8 +18,6 @@ enum validationEnum {
 
 class FacadeAPI {
   private var serializationManager: SerializationManager
-  private var errorAlert: AlertController
-  private var urlSession: URLSessionNetwork
   private var coreDataApi: CoreDataAPI
   
 
@@ -27,8 +25,6 @@ class FacadeAPI {
   
   private init() {
     serializationManager = SerializationManager()
-    errorAlert = AlertController()
-    urlSession = URLSessionNetwork()
     coreDataApi = CoreDataAPI()
   }
   
@@ -36,28 +32,6 @@ class FacadeAPI {
     return coreDataApi.getNewIdForEntityType(type.self, in: managedContext)
   }
   
-  func getImage(from urlString: String,completion: @escaping(UIImage?)->()) {
-    DispatchQueue.main.async {
-      if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
-        if let imageData = appDelegate.ImageCache[urlString] {
-          completion(UIImage(data: imageData))
-        } else {
-          DispatchQueue.init(label: "ImageDownload").async {
-            self.urlSession.downloadImage(using: urlString) { (response) in
-              DispatchQueue.main.async {
-                if let data = response.data {
-                  appDelegate.ImageCache[urlString] = data
-                  completion(UIImage(data: data))
-                } else {
-                  completion(nil)
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
   
   func validatePassword(with input: String, compareTo user: LoginModel) -> validationEnum {
     if let passwordHased = input.hashed(.md5)?.uppercased() {
@@ -70,11 +44,7 @@ class FacadeAPI {
       return .error
     }
   }
-  
-  func showAlertView(from view: UIViewController, with title: String, and message: String) {
-    errorAlert.alert(viewToPresent: view, title: title, message: message)
-  }
-  
+
   func fetchFirstUser() -> LoginModel {
    return coreDataApi.fetchFirstUser()
   }

@@ -7,23 +7,19 @@
 //
 
 import SwiftUI
-import CoreData
-import UIKit
 
 struct ContentView: View {
   @FetchRequest(
     entity: LoginModel.entity(),
     sortDescriptors: [NSSortDescriptor(keyPath: \LoginModel.id, ascending: true)]
-  ) var notCompletedTasks: FetchedResults<LoginModel>
-  
+  ) var users: FetchedResults<LoginModel>
   
   var body: some View {
     NavigationView {
       List {
-        ForEach(notCompletedTasks) { task in
-          NavigationLink(destination: UserLoginView(user: task)) {
-            UserkRow(loginModel: task)
-            
+        ForEach(users) { user in
+          NavigationLink(destination: UserLoginView(user: user)) {
+            UserkRow(loginModel: user)
           }
         }
         .navigationBarTitle("Users")

@@ -7,8 +7,6 @@
 //
 
 import SwiftUI
-import CoreData
-import UIKit
 
 struct UserLoginView: View {
   var user: LoginModel

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53B577B245F69380044390F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53B577A245F69380044390F /* ActivityIndicator.swift */; };
 		B5A8576C245EEE3500BB8F5C /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8576B245EEE3500BB8F5C /* UserRow.swift */; };
 		B5A8576E245EF73F00BB8F5C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8576D245EF73F00BB8F5C /* ImageLoader.swift */; };
 		B5A85770245EF77700BB8F5C /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A8576F245EF77700BB8F5C /* AsyncImage.swift */; };
@@ -19,9 +20,6 @@
 		B5F15888245D70FB003FE428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F15886245D70FB003FE428 /* LaunchScreen.storyboard */; };
 		B5F158AD245DB7C8003FE428 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15891245DB7C8003FE428 /* MD5.swift */; };
 		B5F158AE245DB7C8003FE428 /* SerializationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15893245DB7C8003FE428 /* SerializationManager.swift */; };
-		B5F158AF245DB7C8003FE428 /* DataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15895245DB7C8003FE428 /* DataWrapper.swift */; };
-		B5F158B0245DB7C8003FE428 /* ErrorAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15896245DB7C8003FE428 /* ErrorAlertView.swift */; };
-		B5F158B1245DB7C8003FE428 /* URLSesstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F15898245DB7C8003FE428 /* URLSesstion.swift */; };
 		B5F158B2245DB7C8003FE428 /* FacadeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1589A245DB7C8003FE428 /* FacadeAPI.swift */; };
 		B5F158B3245DB7C8003FE428 /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1589C245DB7C8003FE428 /* CoreDataAPI.swift */; };
 		B5F158B4245DB7C8003FE428 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1589E245DB7C8003FE428 /* String + Extensions.swift */; };
@@ -37,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53B577A245F69380044390F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		B5A8576B245EEE3500BB8F5C /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		B5A8576D245EF73F00BB8F5C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		B5A8576F245EF77700BB8F5C /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
@@ -51,9 +50,6 @@
 		B5F15889245D70FB003FE428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F15891245DB7C8003FE428 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		B5F15893245DB7C8003FE428 /* SerializationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationManager.swift; sourceTree = "<group>"; };
-		B5F15895245DB7C8003FE428 /* DataWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataWrapper.swift; sourceTree = "<group>"; };
-		B5F15896245DB7C8003FE428 /* ErrorAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAlertView.swift; sourceTree = "<group>"; };
-		B5F15898245DB7C8003FE428 /* URLSesstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSesstion.swift; sourceTree = "<group>"; };
 		B5F1589A245DB7C8003FE428 /* FacadeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacadeAPI.swift; sourceTree = "<group>"; };
 		B5F1589C245DB7C8003FE428 /* CoreDataAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataAPI.swift; sourceTree = "<group>"; };
 		B5F1589E245DB7C8003FE428 /* String + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
@@ -79,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B53B5779245F69190044390F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B53B577A245F69380044390F /* ActivityIndicator.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		B5A8576A245EEDBE00BB8F5C /* Custom Rows */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +110,7 @@
 		B5F15877245D70FA003FE428 /* MD5 algorithm SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B53B5779245F69190044390F /* CustomViews */,
 				B5A8576A245EEDBE00BB8F5C /* Custom Rows */,
 				B5F158CC245DBA09003FE428 /* Delegates */,
 				B5F1588F245DB7C7003FE428 /* Base */,
@@ -135,7 +140,6 @@
 				B5F158AC245DB7C8003FE428 /* Constants.swift */,
 				B5F15890245DB7C8003FE428 /* MD5 */,
 				B5F15892245DB7C8003FE428 /* SerializationManager */,
-				B5F15894245DB7C8003FE428 /* ErrorHandling */,
 				B5F15897245DB7C8003FE428 /* Networking */,
 				B5F15899245DB7C8003FE428 /* Facade */,
 				B5F1589B245DB7C8003FE428 /* CoreDataAPI */,
@@ -159,19 +163,9 @@
 			path = SerializationManager;
 			sourceTree = "<group>";
 		};
-		B5F15894245DB7C8003FE428 /* ErrorHandling */ = {
-			isa = PBXGroup;
-			children = (
-				B5F15895245DB7C8003FE428 /* DataWrapper.swift */,
-				B5F15896245DB7C8003FE428 /* ErrorAlertView.swift */,
-			);
-			path = ErrorHandling;
-			sourceTree = "<group>";
-		};
 		B5F15897245DB7C8003FE428 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				B5F15898245DB7C8003FE428 /* URLSesstion.swift */,
 				B5A8576D245EF73F00BB8F5C /* ImageLoader.swift */,
 				B5A8576F245EF77700BB8F5C /* AsyncImage.swift */,
 			);
@@ -304,18 +298,16 @@
 				B5A8576C245EEE3500BB8F5C /* UserRow.swift in Sources */,
 				B5F158CB245DB948003FE428 /* Role+CoreDataProperties.swift in Sources */,
 				B5F158CA245DB948003FE428 /* Role+CoreDataClass.swift in Sources */,
-				B5F158AF245DB7C8003FE428 /* DataWrapper.swift in Sources */,
 				B5F15879245D70FA003FE428 /* AppDelegate.swift in Sources */,
 				B5A85772245F034100BB8F5C /* UserLoginView.swift in Sources */,
 				B5F158B2245DB7C8003FE428 /* FacadeAPI.swift in Sources */,
-				B5F158B0245DB7C8003FE428 /* ErrorAlertView.swift in Sources */,
 				B5F158C8245DB948003FE428 /* LoginModel+CoreDataClass.swift in Sources */,
 				B5F158B7245DB7C8003FE428 /* MD5_algorithm_SwiftUI.xcdatamodeld in Sources */,
 				B5F15880245D70FA003FE428 /* ContentView.swift in Sources */,
 				B5F158C9245DB948003FE428 /* LoginModel+CoreDataProperties.swift in Sources */,
 				B5A8576E245EF73F00BB8F5C /* ImageLoader.swift in Sources */,
-				B5F158B1245DB7C8003FE428 /* URLSesstion.swift in Sources */,
 				B5A85770245EF77700BB8F5C /* AsyncImage.swift in Sources */,
+				B53B577B245F69380044390F /* ActivityIndicator.swift in Sources */,
 				B5F158AE245DB7C8003FE428 /* SerializationManager.swift in Sources */,
 				B5F1587B245D70FA003FE428 /* SceneDelegate.swift in Sources */,
 				B5F158B4245DB7C8003FE428 /* String + Extensions.swift in Sources */,
