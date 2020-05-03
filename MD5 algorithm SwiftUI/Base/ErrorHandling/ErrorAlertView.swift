@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-import Foundation
 import UIKit
 
 class AlertController {
@@ -21,3 +19,5 @@ class AlertController {
     viewToPresent.present(alert, animated: true, completion: nil)
   }
 }
+
+

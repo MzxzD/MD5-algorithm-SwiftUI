@@ -7,15 +7,33 @@
 //
 
 import SwiftUI
+import CoreData
+import UIKit
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+  @FetchRequest(
+    entity: LoginModel.entity(),
+    sortDescriptors: [NSSortDescriptor(keyPath: \LoginModel.id, ascending: true)]
+  ) var notCompletedTasks: FetchedResults<LoginModel>
+  
+  
+  var body: some View {
+    NavigationView {
+      List {
+        ForEach(notCompletedTasks) { task in
+          NavigationLink(destination: UserLoginView()) {
+            UserkRow(loginModel: task)
+            
+          }
+        }
+      }
     }
+    .navigationBarTitle("LOL")
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView()
+  }
 }

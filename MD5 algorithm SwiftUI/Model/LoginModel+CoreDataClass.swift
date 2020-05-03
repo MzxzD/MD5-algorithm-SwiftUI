@@ -11,6 +11,11 @@ import Foundation
 import CoreData
 
 @objc(LoginModel)
-public class LoginModel: NSManagedObject {
+public final class LoginModel: NSManagedObject {
 
+}
+
+
+extension LoginModel: Identifiable {
+  
 }
