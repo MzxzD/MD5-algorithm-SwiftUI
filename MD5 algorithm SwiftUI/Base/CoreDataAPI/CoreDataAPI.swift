@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 class CoreDataAPI {
   
@@ -31,6 +32,27 @@ class CoreDataAPI {
       print("Could not fetch \(error.localizedDescription)")
     }
     return nil
+  }
+  
+  func fetchFirstUser() -> LoginModel {
+    let appdelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    let loginModelCodables = parseLocalJSON()
+    let context = appdelegate.persistentContainer.viewContext
+    let loginModelCodable = loginModelCodables!.loginModel.first!
+      let loginModel = LoginModel(context: context)
+      let role = Role(context: context)
+      loginModel.id = Int32(loginModelCodable.id)!
+      loginModel.name = loginModelCodable.name
+      loginModel.avatarUrl = loginModelCodable.avatarURL
+      loginModel.password = loginModelCodable.passHash
+      
+      // TODO: - Implement a way to check for duplicates
+      role.id = FacadeAPI.shared.getNewIdForEntityType(Role.self, in: context)!
+      role.name = loginModelCodable.role
+      loginModel.role = role
+      
+      return loginModel
   }
   
 }

@@ -74,4 +74,10 @@ class FacadeAPI {
   func showAlertView(from view: UIViewController, with title: String, and message: String) {
     errorAlert.alert(viewToPresent: view, title: title, message: message)
   }
+  
+  func fetchFirstUser() -> LoginModel {
+   return coreDataApi.fetchFirstUser()
+  }
+  
 }
+

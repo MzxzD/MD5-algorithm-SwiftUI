@@ -33,26 +33,9 @@ struct UserkRow: View {
   }
 }
 
-struct LandmarkRow_Previews: PreviewProvider {
+struct UserkRow_Previews: PreviewProvider {
   static var previews: some View {
-    let appdelegate = UIApplication.shared.delegate as! AppDelegate
-    
-    let loginModelCodables = parseLocalJSON()
-    let context = appdelegate.persistentContainer.viewContext
-    let loginModelCodable = loginModelCodables!.loginModel.first!
-      let loginModel = LoginModel(context: context)
-      let role = Role(context: context)
-      loginModel.id = Int32(loginModelCodable.id)!
-      loginModel.name = loginModelCodable.name
-      loginModel.avatarUrl = loginModelCodable.avatarURL
-      loginModel.password = loginModelCodable.passHash
-      
-      // TODO: - Implement a way to check for duplicates
-      role.id = FacadeAPI.shared.getNewIdForEntityType(Role.self, in: context)!
-      role.name = loginModelCodable.role
-      loginModel.role = role
-      
-      return UserkRow(loginModel: loginModel)
+    return UserkRow(loginModel: FacadeAPI.shared.fetchFirstUser())
     
   }
 }

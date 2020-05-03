@@ -21,14 +21,14 @@ struct ContentView: View {
     NavigationView {
       List {
         ForEach(notCompletedTasks) { task in
-          NavigationLink(destination: UserLoginView()) {
+          NavigationLink(destination: UserLoginView(user: task)) {
             UserkRow(loginModel: task)
             
           }
         }
+        .navigationBarTitle("Users")
       }
     }
-    .navigationBarTitle("LOL")
   }
 }
 
